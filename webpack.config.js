@@ -4,7 +4,7 @@ const BrowserSyncPlugin = require("browser-sync-webpack-plugin");
 module.exports = {
     /* Any additional front end scripts go here */
     entry: {
-        homePage: path.resolve(
+        homepage: path.resolve(
             __dirname,
             "src",
             "public",
@@ -23,7 +23,7 @@ module.exports = {
     /* Outputs homePage.bundle.js and messageBoard.bundle.js for example */
     output: {
         filename: "[name].bundle.js",
-        path: path.resolve(__dirname, "views"),
+        path: path.resolve(__dirname, "src", "views", "bundles"),
     },
     devtool: "inline-source-map",
     mode: "development",

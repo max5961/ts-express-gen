@@ -3,13 +3,15 @@
     "version": "1.0.0",
     "main": "index.js",
     "scripts": {
-        "build": "npx webpack && tsc && node ./dist/index.js"
+        "build": "npx webpack && tsc && node ./dist/index.js",
+        "start:server": "tsc && node ./dist/index.js"
     },
     "keywords": [],
     "author": "",
     "license": "ISC",
     "description": "",
     "dependencies": {
+        "ejs": "^3.1.10",
         "express": "^4.19.2"
     },
     "devDependencies": {
